@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuck Memes</title>
+  </head>
+  <body>
+    
+    <script src="script.js"></script>
+
+    <!-- START-- BUTTON FOR VIEWING MEMES -->
+    <br>
+    <center><button onclick="getDataFromStrapi();">View Memes</button><center/>  <br><br>  <div id="memeFetched"></div>
+    <!-- END-- BUTTON FOR VIEWING MEMES -->
+
+      <!-- START--BUTTON FOR GETTING RANDOM MEMES -->
+      <center><button onclick="randomMemes();">Get Random Meme</button><center><br><br> 
+        <h1 id="randomMeme"></h1>
+      
+        <!-- START -- INPUT FOR USERNAME AND PASSWORD -->
+        <div>
+            <h1>Ange användarnamn och lösenord för att kunna lägga till memes: </h1>
+            <label for="user">Användarnamn:</label>
+            <input type="text" name="user" id="user">
+    
+            <label for="pass">Lösenord:</label>
+            <input type="text" name="pass" id="pass">
+        </div>
+        <!-- END -- INPUT FOR USERNAME AND PASSWORD -->
+
+
+        <!-- START -- INPUT FOR ADDING MEME AND LEVEL -->
+          <h1>Fyll i meme-text och level som du vill lägga till i listan: </h1>
+      <div><label for="name">MEME: </label>      <br> 
+      <input type="text" name="name" id="name" required/>    <br><br>
+      </div>  
+      
+      <div>      
+      <label for="level">Level: </label>      <br> 
+      <input type="number" name="level" id="level" />    <br><br>
+      </div>
+      <!-- END --INPUT FOR ADDING MEME AND LEVEL -->
+      
+
+      <!--START-- BUTTON FOR ADDING MEMES -->
+      <div>      
+      <button onclick="postData();">Add Memes</button>    
+      <h1>ADDED MEME: </h1>
+      <h1 id="addedMemes"></h1>
+      <!--END-- BUTTON FOR ADDING MEMES -->
+
+      
+    </div> <br><br>
+
+
+
+
+      
+  </body>
+</html>
