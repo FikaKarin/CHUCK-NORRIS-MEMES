@@ -10,29 +10,30 @@
     
     <script src="script.js"></script>
 
-    <!-- START-- BUTTON FOR VIEWING MEMES -->
+    <!-- START-- KNAPP FÖR VIEWING MEMES -->
     <br>
     <center><button onclick="getDataFromStrapi();">View Memes</button><center/>  <br><br>  <div id="memeFetched"></div>
-    <!-- END-- BUTTON FOR VIEWING MEMES -->
+    <!-- END-- KNAPP FÖR VIEWING MEMES -->
 
-      <!-- START--BUTTON FOR GETTING RANDOM MEMES -->
+      <!-- START--KNAPP FÖR RANDOM MEMES -->
       <center><button onclick="randomMemes();">Get Random Meme</button><center><br><br> 
         <h1 id="randomMeme"></h1>
+        <!-- END --KNAPP FÖR RANDOM MEMES -->
       
-        <!-- START -- INPUT FOR USERNAME AND PASSWORD -->
+        <!-- START -- INPUT FÖR USERNAME OCH PASSWORD -->
         <div>
-            <h1>Ange användarnamn och lösenord för att kunna lägga till memes: </h1>
-            <label for="user">Användarnamn:</label>
+            <h1>Fill in username and password: </h1>
+            <label for="user">Username:</label>
             <input type="text" name="user" id="user">
     
-            <label for="pass">Lösenord:</label>
+            <label for="pass">Password:</label>
             <input type="text" name="pass" id="pass">
         </div>
-        <!-- END -- INPUT FOR USERNAME AND PASSWORD -->
+        <!-- END -- INPUT FÖR USERNAME OCH PASSWORD -->
 
 
-        <!-- START -- INPUT FOR ADDING MEME AND LEVEL -->
-          <h1>Fyll i meme-text och level som du vill lägga till i listan: </h1>
+        <!-- START -- INPUT FÖR ADDING MEME OCH LEVEL -->
+          <h1>Write the meme you want to add to the list: </h1>
       <div><label for="name">MEME: </label>      <br> 
       <input type="text" name="name" id="name" required/>    <br><br>
       </div>  
@@ -41,15 +42,15 @@
       <label for="level">Level: </label>      <br> 
       <input type="number" name="level" id="level" />    <br><br>
       </div>
-      <!-- END --INPUT FOR ADDING MEME AND LEVEL -->
+      <!-- END --INPUT FÖR ADDING MEME OCH LEVEL -->
       
 
-      <!--START-- BUTTON FOR ADDING MEMES -->
+      <!--START-- KNAPP FÖR ADDING MEMES -->
       <div>      
       <button onclick="postData();">Add Memes</button>    
       <h1>ADDED MEME: </h1>
       <h1 id="addedMemes"></h1>
-      <!--END-- BUTTON FOR ADDING MEMES -->
+      <!--END-- KNAPP FÖR ADDING MEMES -->
 
       
     </div> <br><br>
